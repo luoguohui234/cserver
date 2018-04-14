@@ -1,0 +1,12 @@
+
+version: '2'
+
+services:
+
+  cserver:
+    extends:
+      file: docker-compose-base.yaml
+      service: cserver-base
+    container_name: cserver
+    volumes:
+      - $GOPATH/bin:/app

@@ -1,0 +1,8 @@
+
+version: '2'
+
+services:
+  cserver-base:
+    image: cserver:$IMAGE_TAG
+    working_dir: /app
+    command: "./cserver"
